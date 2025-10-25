@@ -23,7 +23,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middelwares
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+}));
 app.use(express.json());
 app.use(morgan("dev"));
 
