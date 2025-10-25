@@ -10,6 +10,9 @@ import { CartProvider } from "./context/cart";
 import "antd/dist/reset.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/ButtonStyles.css";
+import axios from "axios";
+
+axios.defaults.baseURL = process.env.REACT_APP_API;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
