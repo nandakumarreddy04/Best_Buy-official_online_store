@@ -128,7 +128,7 @@ const HomePage = () => {
               <Col xs={24} sm={12} md={8} key={p._id}>
                 <div className="card m-2">
                   <img
-                    src={`/api/v1/product/product-photo/${p._id}`}
+                    src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />

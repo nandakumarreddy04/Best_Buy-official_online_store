@@ -53,7 +53,7 @@ const ProductDetails = () => {
             <Col xs={24} md={12}>
               {product._id && (
                 <img
-                  src={`/api/v1/product/product-photo/${product._id}`}
+                  src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${product._id}`}
                   className="product-details-image"
                   alt={product.name}
                 />
@@ -101,7 +101,7 @@ const ProductDetails = () => {
             <Col xs={24} sm={12} md={8} lg={6} key={p._id}>
               <div className="card">
                 <img
-                  src={`/api/v1/product/product-photo/${p._id}`}
+                  src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                   onClick={() => navigate(`/product/${p.slug}`)}

@@ -106,7 +106,7 @@ const CartPage = () => {
                   <Row align="middle" gutter={16}>
                     <Col xs={24} sm={6}>
                       <img
-                        src={`/api/v1/product/product-photo/${p._id}`}
+                        src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                         className="cart-item-image"
                         alt={p.name}
                       />
